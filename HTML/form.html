@@ -1,0 +1,56 @@
+<form action="form.html" method="post"><!--Criando o formulario, action indica para onde será enviada a informação e method o jeito que ela será enviada (get ou post)-->
+	
+	<input type="text" name="name" required> <!--Criando campo de texto obrigatório-->
+	<input type="password" name="senha"><!--Criando campo de senha não obrigatorio-->
+	<input type="email" name="email"><!--Criando campo de email-->
+
+	<!--Exemplos de inputs-->
+	<input type="hidden" name="id">
+	<input type="color" name="cor">
+	<input type="date" name="nascimento">
+	<input type="datetime-local" name="dataInsercao">
+	<input type="file" name="arquivo">
+	<input type="image" name="foto">
+	<input type="month" name="mes">
+	<input type="number" name="idade">
+	<input type="range" name="porcentagem">
+	<input type="reset" name="limpar">
+	<input type="search" name="busca">
+	<input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+	<input type="time">
+	<input type="url">
+	<input type="week">
+
+	<textarea name="descricao" cols="30" rows="10"></textarea><!--Criando uma area de texto com 30 colunas e 10 linhas-->
+
+	<div> <!--Definindo a area do meus radio buttons-->
+		<input type="radio" name="user" value="adm"><span>Administrador</span><!--Criando os radios buttons, percebe que os 3 tem o mesmo nome para indicar o groupbox que eles pertecem-->
+		<input type="radio" name="user" value="reg" checked><span>Usuario normal</span>
+		<input type="radio" name="user" value="sup"><span>Supervisor</span>
+	</div>
+
+	<div><!--Criando area do meu checkbox-->
+		<input type="checkbox" name="efetivo"><span>Efetivado?</span><!--Criando meu checkbox-->
+	</div>
+
+	<select name="uf"><!--Criando minha combo box de seleção unica-->
+		<!--Inserindo as opções na minha combo box-->
+		<option value="ac">Acre</option> 
+		<option value="bh">Bahia</option>
+		<option value="sp">São Paulo</option>
+		<option value="rj">Rio de Janeiro</option>
+		<option value="es">Espirito Santo</option>
+	</select>
+
+	<select name="interesse" multiple="" size="3"><!--Criando minha combo box podendo exibir até 3 opções-->
+		<option value="1">Comer</option> 
+		<option value="2">Dormir</option>
+		<option value="3">Codar</option>
+		<option value="4">Jogar</option>
+		<option value="5">Estudar</option>
+	</select>
+	<!--Existem 2 possibilidades de criar botões-->
+	<button formaction="estruturaHTML.html">Alterar</button>
+	<input type="submit" value="Cadastrar">
+
+</form>

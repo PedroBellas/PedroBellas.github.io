@@ -1,0 +1,180 @@
+<h1>Listas</h1>
+
+<!--Lista ordenada (vai aparecer numeros na frente dos itens)-->
+<h2>Lista Ordenada</h2>
+
+<h3>Aprovados</h3>
+<ol>
+	<li>Pedro</li>
+	<li>Patricia</li>
+	<li>Priscila</li>
+	<li>Milena</li>
+</ol>
+
+<!--Lista Não ordenada (vai aparecer simbolos na frente dos itens)-->
+<h2>Lista Não Ordenada</h2>
+<h3>Reprovados</h3>
+<ul>
+	<li>Raquel</li>
+	<li>xerazadi</li>
+	<li>Tristana</li>
+	<li>Kayn</li>
+</ul>
+
+<!--Lista de Definição (Por exemplo glossários)-->
+
+<h2>Lista de Definições</h2>
+<dl>
+	<dt>Aprovado</dt>
+	<dd>Quem tirou mais do que 6 e passou de ano</dd>
+
+	<dt>Reprovado</dt>
+	<dd>Quem tirou menos do que 6 e passou de ano</dd>
+</dl>
+
+<!--Listas aninhadas, pode ser feito com listas ordenadas (ol) ou lista não ordenadas (ul), mas deve-se usar ul sempre que possivel-->
+<h2>Listas aninhadas</h2>
+<h3>Lista Não Ordenada</h3>
+<ul>
+	<li>
+		bakcend
+		<ul>
+			<li>
+				app
+				<ul>
+					<li>produto.php</li>
+					<li>user.php</li>
+					<li>carrinho.php</li>
+				</ul>
+			</li>
+			<li>Doc</li>
+			<li>
+				config
+				<ul>
+					<li>banco de dados</li>
+					<li>rotas</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		frontend
+		<ul>
+			<li>
+				public
+				<ul>
+					<li>app.css</li>
+					<li>app.html</li>
+					<li>app.js</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>db_projeto.sql</li>
+</ul>
+
+<h3>Lista Ordenada</h3>
+<ol>
+	<li>
+		bakcend
+		<ol>
+			<li>
+				app
+				<ol>
+					<li>produto.php</li>
+					<li>user.php</li>
+					<li>carrinho.php</li>
+				</ol>
+			</li>
+			<li>Doc</li>
+			<li>
+				config
+				<ol>
+					<li>banco de dados</li>
+					<li>rotas</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+	<li>
+		frontend
+		<ol>
+			<li>
+				public
+				<ol>
+					<li>app.css</li>
+					<li>app.html</li>
+					<li>app.js</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+	<li>db_projeto.sql</li>
+</ol>
+
+<!--Criando menu dinamico-->
+<h2>Lista Dinamica!!!</h2>
+<ul>
+	<li>
+		<span wm-folder>bakcend</span>
+		<ul>
+			<li>
+				<span wm-folder>app</span>
+				<ul>
+					<li>produto.php</li>
+					<li>user.php</li>
+					<li>carrinho.php</li>
+				</ul>
+			</li>
+			<li>Doc</li>
+			<li>
+				<span wm-folder>config</span>
+				<ul>
+					<li>banco de dados</li>
+					<li>rotas</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<span wm-folder>frontend</span>
+		<ul>
+			<li>
+				<span wm-folder>public</span>
+				<ul>
+					<li>app.css</li>
+					<li>app.html</li>
+					<li>app.js</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>db_projeto.sql</li>
+</ul>
+
+<!--Esse script precisa ser inserido na pagina principal-->
+<script type="text/javascript">
+
+
+	/*Codigos js de lista.html, não irá funcionar se acessado atraves de estruturaHTML.html*/
+	document.querySelectorAll('[wm-folder]').forEach(folder => {
+
+		folder.style.cursor = 'pointer';
+
+		folder.onclick = function(e) {
+
+			const ul = folder.nextElementSibling;
+			const dis = ul.style.display;
+
+			if(dis === 'none'){
+				ul.style.display = 'block';
+			}
+			else{
+				ul.style.display = 'none';	
+			}
+
+		}
+
+	});
+
+</script>

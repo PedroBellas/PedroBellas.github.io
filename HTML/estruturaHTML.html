@@ -1,0 +1,148 @@
+<!DOCTYPE html> <!-- Deifinindo que é HTML 5, tag que define qual versão do HTML vc esta usando -->
+<html lang="pt-br"> <!--Indica o começo da sua pagina/lang siguinifica  a linguagem-->
+	<head><!--Onde voce coloca links e coisas não visuais com excessão do titulo e icon-->
+		<meta /> <!--A tag meta funciona como uma etiqueta auxiliando os SEO a encontrarem a sua pagina -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Definindo o tamanho da tela padrão, usado para respansividade-->
+		<meta charset="utf-8" /> <!--Define o conjunto de caracteres usado na pagina (define o idioma)-->
+		<title>Anatomia HTML</title> <!--Define o titulo da pagina, o que fica escrito na caixa de janela do navegador-->
+		<link rel="stylesheet" type="text/css" href="#" /> <!--Referenciando CSS -->
+
+		<!--NÃO RECOMENDADO-->
+		<style type="text/css"> /*Indica que iniciou-se a parte de CSS, note que o comentario é diferente também*/
+			h1{
+				background-color: red;
+			}
+			#texto1 {
+				color: green;
+				background-color: lightgray;
+				font-size: 30px;
+			}
+
+			.texto1 {
+				color: #00f;
+				background-color: lightgreen;
+				font-size: 20px;	
+			}
+			.negrito{
+				font-weight: bold;
+			}
+
+			/*CSS do video*/
+
+			.progresso{
+				width: 750px;
+				margin-left: 25px;
+				height: 10px;
+				border: 1px solid #0f0f0f;
+			}
+
+			.progresso > div{
+				background-color: red;
+				color: #fff;
+				height: 100%;
+				text-align: right;
+				font-size: 10px;
+				width: 0%;
+			}
+		</style>
+		<!--Sempre bom saber que devemos sempre separar os diferentes tipo de documentos, sejam eles HTML, CSS ou JS-->
+
+	</head>
+	<body> <!--Onde voce organiza a sua pagina coisas visuais e semanticas-->
+		<header> <!--Inicio do cabeçalho visual da pagina, tag semantica-->
+			<h1 wm-atrib><!--Criando um atributo na tag, usado para mexer na tag atraves do JS-->HTML</h1> <!--Indica o assunto principal da pagina, SEO (Processo de busca de conteudos na internet)-->
+			<h2>Tudo que voce precisa saber sobre!</h2> <!--As heading tags podem variar entre h1 até h6-->
+		</header>
+		<section> <!--inicio da area de sessão ( agrupamento logico de conteudo da pagina), tag semantica -->
+			<h3>Exercicios de HTML</h3>
+			<h4 style="color: red"><!--Podemos aplicar o style direto na tag também, mas NÃO É RECOMENDADO-->CSS</h4>
+			<span id="texto1"><!--Não pode existir um id com mesmo nome, serve como um identificador-->Texto 1</span> <!-- a tag span serve como conteiner generico em linha para conteúdo fraseado, é diferente da tag p-->
+			<br /> <!--Tag sem corpo utilizada para quebrar linha, pouco utilizada hoje em dia-->
+			<span class="texto1"><!--Um identificador, geralmente associado ao CSS, pode usar varias classes com mesmo nome-->Texto 2</span>
+			<br />
+			<span class="texto1">Texto 3</span>
+			<br />
+			<span class="texto1 negrito"> <!--Pode receber a formatação de 2 ou mais classes CSSs separadas por espaço-->Texto 4</span>
+		</section>
+		<aside> <!-- Inicio da area de aside (efine um bloco de conteúdo que faz referência ao conteúdo principal que o cerca), tag semantica -->
+			
+		</aside>
+		<nav> <!--Inicio da area de navegação da pagina (geralmente contem links para outras paginas), tag semantica-->
+			<a href="textoPuro.html?1422981258"><!--Add sequencia de caracteres fantasma para limpar o cache e fazer requisições Ajax/dinamicas-->Tags para textos e semanticas textuais</a> <!-- Definindo um link -->
+			<br />
+			<a href="lista.html?1422981258910123213">Listas!!!</a> <!-- Definindo um link -->
+			<br />
+			<a href="link.html?14229812589101232132">Links e zelda</a> <!-- Definindo um link -->
+			<br />
+			<a href="tabela.html?14229812589101232132">Tabelinhas</a> <!-- Definindo um link -->
+			<br />
+			<a href="form.html?14229812589101232132">Forms</a> <!-- Definindo um link -->
+			<br />
+			<a href="image.html?14229812589101232132">Imagens give-me images!!!</a> <!-- Definindo um link -->
+		</nav>		
+		<section id="conteudo">
+			
+		</section>
+		<section id="video"><!--Area de video-->
+
+			<video id="meuVideo" width="800" height="400" controls autoplay controlsList="nodownload"><!--Criando o video-->
+				<source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+				<span>Seu navegador não possibilita a aexibição do video</span>
+			</video>
+
+			<div wm-progresso="meuVideo" class="progresso"><!--Associando a div ao video-->
+				<div> <!--preencher a barrinha do progresso-->
+					
+				</div>
+			</div>
+
+			<div><!--Responsavel pelos botões-->
+				<button wm-play="meuVideo">Play</button>
+				<button wm-pause="meuVideo">Pause</button>
+			</div>
+
+		</section>
+		<footer> <!--Inicio do rodapé visual da pagina, tag semantica-->
+			
+		</footer>
+		<script type="text/javascript"> /*<!--India o começo da area de javascript-->*/
+			const conteudo = document.getElementById('conteudo');
+			document.querySelectorAll('a').forEach(lista => {
+				lista.onclick = function(e){
+					e.preventDefault();
+					console.log('action!');
+
+					fetch(lista.href).then(resp => resp.text()).then(html => conteudo.innerHTML = html);
+
+				}
+			});
+
+			/*Script do video*/
+
+			function configurarVideo(id){
+
+				const video = document.getElementById(id);
+				video.oncontextmenu = () => false; /*Tirar o menu de cima do vide para evitar pirataria*/
+
+				/*Configurando os botoes*/
+
+				document.querySelector(`[wm-play=${id}]`).onclick = e => video.play();
+				document.querySelector(`[wm-pause=${id}]`).onclick = e => video.pause();
+
+				setInterval(() => {
+
+					const percentual = (video.currentTime / video.duration) * 100;
+
+					const valorDiv = document.querySelector(`[wm-progresso=${id}] > div`);
+					valorDiv.style.width = `${percentual}%`;
+					valorDiv.innerHTML = `${percentual.toFixed(1)}%`;
+
+				});
+
+			}
+
+			configurarVideo('meuVideo');
+
+		</script>
+	</body>
+</html><!--Indica o final da sua pagina-->

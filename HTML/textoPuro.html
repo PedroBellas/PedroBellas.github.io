@@ -1,0 +1,55 @@
+<h1>O titulo do livro</h1>
+<h2>Titulo do capitulo</h2>
+<h3>Titulo do arco do capitulo</h3>
+<h4>Titulo da história dentro do arco</h4>
+<h5>Titulo do pedaço da historia dentro do arco</h5>
+<h6>Titulo do pedacinho do pedaço da historia dentro do arco</h6>
+<!--Não FAÇA ESSA BAGUNÇA DE <P> E <SPAN> IGUAL EU FIZ, SÓ FIZ PARA EXEMPLIFICAR PARA VCS-->
+<span>
+	Da mesma forma que posso expressar textos dentro das tags"< span >" da mesma forma que na tag"< p >", 
+
+	<!--É necessario usar tags para quebrar a linha-->
+
+	mas eles possuem valores semânticos diferentes, saber a hora de usar cada um torna seu codigo mais limpo e profissional.
+	<p>Os cabeçalhos ou headers tags tem tamanho visuais difirentes, porém essa é apenas uma maneira do browser expresa-los.</p>
+	<p>As header tags tem uma importancia fundamental para aumentar o nivel de busca do seu site!</p>
+	<span>Percebe-se que não a necessidade da tag"< br />" para pular linha. </span> <span>Porque o a tag "< p >" já pula linha automaticamente diferente da tag"< span >".</span>
+</span>
+<p>Tambem temos texto em <b>Negrito</b> e <i>Italico</i> ou textos sobrescritos por exemplo: 2<sup>2</sup> = 4 e textos subscrito por exemplo H<sub>2</sub>O</p>
+<p>Sobre espaços &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Nome disso é entidade-->em branco recomenda-se fazer atraves do CSS, mas é possivel fazer dessa                    <!--Espaço no texto não faz diferença--> forma</p>
+<p>Quebra<br />de linha<br /> simples</p>
+<hr /> <!--Funciona para quebrar linha mas adiciona uma linha na vertical-->
+<p>Legal o HR né, kkk</p>
+
+<!--Confira as tags de marcações semanticas!!!-->
+<p>Começamos com a tag"<strong>< strong ></strong>"<br />Agora veja a tag"<b>< b ></b>"<br /> Agora a tag"<em>< em ></em>"<br />Agora a tag "<i>< i ></i>"</p><!--Visualmente são identicas, porém strong tem valor semantico de enfaze e em tem valor semantico de destaque no texto-->
+<br />
+
+<!--Agora trabalhando com citações-->
+<p>Fulano disse isso em seu mais novo livor de acordo com o professor Pedro</p>
+<blockquote cite="https://google.com">Citações longas....</blockquote>
+<p>Fulano disse isso em seu mais novo livor de acordo com o professor Pedro <q>Eu estou a fazer uma citação curta</q></p>
+<br />
+<br />
+
+<!--Tags menos conhecidas-->
+<p>
+	<!--Abreviação-->
+	<abbr title="Professor">Prof</abbr> Pedro disse em seu livro
+	<!--Referencia geralmente utilização para coisas e não pessoas-->
+	<cite>HTML para estudo</cite> que HTML é legal!
+</p>
+
+<!--Definição de algum texto-->
+<p><dfn>HTML</dfn> é uma linguagem de marcação.</p>
+
+<!--Endereço fisico-->
+<address>
+	<p>Rua A, n<sup>O</sup> 123...</p>
+</address>
+
+<!--Correção de textos, partes que não eram verdades-->
+<p>O HTML é uma linguagem de<!--Del é a parte que vai ser retirada do texto--> <del>programção</del><!--ins é a parte nova e correta que subtituira o erro!--> <ins>marcação</ins>.</p>
+<p>Computador de <!--Strike geralmente usado para representar promoções--><s>R$ 10000,00</s> por R$1000,00</p>
+
+<!--Embora visualmente sejam identicas, mas semanticamente são extremamente diferentes, lembre-se disso para inclusão de pessoas com deficiencia e ferrametas que indexão HTML-->

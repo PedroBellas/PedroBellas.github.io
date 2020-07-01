@@ -1,0 +1,54 @@
+<p>
+	<img src="img/img1.jpg" alt="Imagem 1" width="500" height="325" title="Imagem um!!!"> <!--Declarando imagem-->
+	<img src="img/imgInex.jpg" alt="A imagem é inexistente" width="500" height="350" title="Imagem inex"> <!--Declarando imagem-->
+	<img src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Carregando" width="300"> <!--Declarando gifs-->
+</p>
+
+<p>
+	<img src="img/img2.jpg" alt="imagem numero 2 com texto" height="120" title="imagem com texto" align="right">
+	<span>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.</span>
+</p>
+<br />
+<p>
+	<img src="img/img2.jpg" alt="imagem numero 2 com texto" height="120" title="imagem com texto" align="center">
+	<span>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.</span>
+</p>
+<br />
+<p>
+	<img src="img/img2.jpg" alt="imagem numero 2 com texto" height="120" title="imagem com texto" align="left">
+	<span>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.</span>
+</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<p class="personagem"></p><!--Colocando imagem atraves do CSS-->
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<p>
+	<picture> <!--Possibilita colocar um grupo de imagens-->
+		<source srcset="img/img1.jpg" media="(min-width: 800px)">
+		<source srcset="img/img2.jpg" media="(min-width: 500px)">
+		<img src="img/img3.jpg" alt="logo" height="200">
+	</picture>
+</p>
+
+<style type="text/css">
+	.personagem{
+		width: 300px;
+		height: 200px;
+		background-image: url('img/img3.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 150%;
+	}
+</style>

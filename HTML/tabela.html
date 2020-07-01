@@ -1,0 +1,35 @@
+<table border="1"> <!--Criando a tabela-->
+	<caption>Produtos do negocio</caption><!--Titulo da tabela-->
+
+	<thead> <!--Funciona como a tag header para uma pagina, indica a primeira linha da tabela (semantica)-->
+		<tr><!--Table Row, indica o inicio de uma linha da tabela-->
+			<th>Produto</th><!--Indica um campo da linha do head-->
+			<th>Preço</th>
+			<th>Quantidade</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+
+	<tbody><!--Inicio do corpo da tabela (semantica)-->
+		<tr>
+			<td>iPad</td><!--Indica um campo da linha do body-->
+			<td>R$2500,00</td>
+			<td>2</td>
+			<td>R$5000,00</td>
+		</tr>
+		<tr>
+			<td>Asus notebook</td>
+			<td>R$1250,00</td>
+			<td>4</td>
+			<td>R$5000,00</td>
+		</tr>
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<td colspan="3">Total de produtos</td><!--colspan indica que vai ocupar mais de 1 campo e rowspan indica a quantidade de linhas que ele vai ocupar-->
+			<td>R$10000,00</td>
+		</tr>
+	</tfoot>
+
+</table>
