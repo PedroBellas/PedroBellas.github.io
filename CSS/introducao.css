@@ -1,0 +1,108 @@
+html, body{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+  	align-items: center;
+	background-color: #17E833;
+	margin-bottom: 1.5%;
+}
+
+header h1{
+	flex-grow: 1;
+	margin: 1% 0 1% 5%;
+	font-size: 1.5em;
+	letter-spacing: 4px;
+}
+
+header ul{
+	flex-grow: 1;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.15em;
+	margin: 1% 2.5% 1% 0;
+}
+
+header ul li{
+	margin: 0 0 0 5%;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #0f0f0f;
+	font-weight: bolder;
+}
+
+header ul li a:hover{
+	opacity: 0.6;
+}
+
+/*Corpo*/
+section {
+	margin: 0 7.5%;
+	display: flex;
+	font-family: 'Zilla Slab', serif;
+}
+
+article{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 0 1.5%;
+}
+
+article h2{
+	margin: 0 0 1.5% 0;
+	font-size: 2em;
+	border-bottom: 2px solid #0CE82C;
+	color: #0CE82C;
+}
+
+article p{
+	margin: 0.5% 0;
+	line-height: 1.5em;
+	text-indent: 2.5em;
+	font-size: 1.25em;
+}
+
+aside{
+	width: 40%;
+	display: flex;
+}
+
+aside img{
+	width: 100%;
+	border-radius: 50px;
+}
+
+.text-principal{
+	width: 100%;
+}
+
+.vantagem{
+	margin-top: 2.5%;
+}
+
+.vantagem-text{
+	order: 2;
+}
+
+.vantagem-img{
+	order: 1;
+}
+
+.vantagem-footer{
+	margin-bottom: 2.5%;
+}
