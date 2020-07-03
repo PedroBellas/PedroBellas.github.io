@@ -1,0 +1,29 @@
+.seletor{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+
+	/*Multiplos valores*/
+	border: 5px solid navy; /* shorthand proper*/
+	font-family: Helvetica, sans-serif; /*Multiplas possibilidades, tena a helvetica primeiro, caso não encontra, vai de sans-serif*/
+	/*funções*/
+	width:  calc(100% - 50px);
+	background-color: rgb(34, 153, 189);
+}
+
+/*Usando uma pseudo-classe*/
+/*Hover = quando passar o mouse em cima*/
+.seletor:hover{
+	background-color: orangered;
+}
+
+/*usando um pseudo-elemento*/
+.seletor::first-letter{
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+/*Usando uma pseudo-classe com um pseudo-elemento*/
+.seletor:hover::first-letter{
+	color: black;
+}

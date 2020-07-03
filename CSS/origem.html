@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Origem CSS: externo, Interno e Inline</title>
+	<link rel="stylesheet" type="text/css" href="origem.css" /> <!--Declarando a relação externa do CSS-->
+
+	<style type="text/css">
+		/*CSS INTERNO*/
+		body{
+			background-color: aquamarine;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>E agora!</h1>
+	<h2 style="background-color: coral;">Em questão de processameto o inline é processado primeiro e os outros o que for processado por ultimo terá a preferencia entre externo e interno</h2>
+	<h3>Não é boa prática colocar interno e inline</h3>
+</body>
+</html>
