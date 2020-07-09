@@ -1,0 +1,23 @@
+p{
+	background-color: #aaa;
+	font-size: 1em;
+}
+
+.titulo{
+	font-size: 3em;
+	color: #00f;
+}
+
+.text{
+	font-size: 2em;
+	border: double #0f0f0f;
+	background-color: #0a0;
+	color: #fff !important; /*O important burla a lógica da especifidade, NÃO RECOMENDADO O USO*/
+}
+
+p.text{
+	border-bottom: 5px dashed #00f;
+	padding: 5px;
+	background: linear-gradient(to right, red, blue);
+	color: #ff0;
+}

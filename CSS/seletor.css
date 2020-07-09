@@ -1,0 +1,94 @@
+/*Seletor universal*/
+*{
+	color: #ff0;
+	background-color: #f77;
+}
+
+/*Seletor de classe*/
+.tag{
+	color: #fff;
+	background-color: #f9f;
+}
+
+/*Seletor de ID*/
+#aprovados{
+	color: #fff;
+	background-color: #0f0f0f;
+}
+
+
+/*Selecionando o filho pelo id do pai*/
+#aninhado > div{
+
+	background-color: #fff;
+
+}
+
+/*seletor de descendente direto*/
+#aninhado section{
+
+	background-color: #9f9f9f;
+
+}
+
+/*Seletor de irmãos adjascente sibling*/
+/*Observação a seleção por classe sobrepõe*/
+p + ul{
+
+	background-color: #f00;
+
+}
+/*Seletor de irmãos general sibling*/
+p ~ ol{
+
+	background-color: #0ff;
+
+}
+
+/*Seletor por atributo*/
+[feira] {
+	background-color: #0f9;
+}
+
+/*Seletor por atributo especifico*/
+[feira=casa] {
+	background-color: #9f0;
+}
+
+/*Seletor por atributo especifico que comece com a palavra escritorio*/
+[feira~=escritorio] {
+	background-color: #090;
+}
+
+/*Seletor que envolve filhos*/
+/*Lembre-se que o elemento label conta como o 1 filho*/
+/*Segundo filho de alguém que seja do tipo span*/
+span:nth-child(2){
+	color: gold;
+	background-color: darkblue;
+}
+
+/*Qaurto filho de alguém que seja do tipo span*/
+span:nth-child(4){
+	background-color: gold;
+	color: darkblue;
+}
+
+/*Pegando todos os filhos impares do article*/
+article > :nth-child(odd){
+	background-color: aquamarine;
+	color: black;
+}
+
+/*Pegando todos os filhos pares do article e paragrafos*/
+article > :nth-child(even), p{
+	color: aquamarine;
+	background-color: black;
+}
+
+/*Pegando o segundo elemento do tipo p do article*/
+
+article > p:nth-of-type(2){
+	color: darkred;
+	background-color: lightgray;
+}

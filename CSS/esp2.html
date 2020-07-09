@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Especificidade #2</title>
+	<link rel="stylesheet" type="text/css" href="esp2.css" />
+</head>
+<body>
+	<div id="unico1">
+		1 - Inline;
+		2 - IDs;
+		3 - Classes, atributos ou pseudo-classes;
+		4 - Elementos, pseudo-elementos;
+	</div>
+	<div id="" class="estilo">
+		#unico1 vs .estilo vs inline (.estilo)
+	</div>
+	<div id="unico1" class="estilo">
+		#unico1 vs .estilo vs inline (#unico1)
+	</div>
+	<div id="unico1" class="estilo">
+		#unico1 vs .estilo vs inline (inline)
+	</div>
+
+	<div id="unico2" class="estilo">
+		#unico2 vs .estilo (#unico2)
+	</div>
+	<div class="estilo" wm-cor>
+		.estilo vs [wm-cor]
+	</div>
+	<div wm-cor>
+		[wm-cor]
+	</div>
+	<div>
+		Elemento (só uma div comun)
+	</div>
+
+	<a href="https://specificity.keegan.st" target="_blank">Link da calculadora de especifidade</a>
+</body>
+</html>

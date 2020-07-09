@@ -1,0 +1,34 @@
+/*Utilize a calculadora para verificar os valores*/
+body{
+	font-size: 1.5em;
+}
+
+div{
+	background-color: #00b;
+	color: #fff;
+}
+
+/*Possuem o mesmo nivel de especifidade*/
+div:hover{
+	background-color: purple;
+}
+
+div.estilo{
+	background-color: #0f0;
+}
+
+div[wm-cor]{
+	color: #00b;
+	background-color: #fff;	
+}
+
+/*fim do mesmo nivel*/
+
+#unico1 {
+	background-color: black;
+	color: #fff;
+}
+
+#unico1:hover{
+	background-color: darkgray;
+}
