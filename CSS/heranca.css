@@ -1,0 +1,12 @@
+body{
+	font-family: monospace;
+	font-size: 40px;
+	border: solid 3px #5f0;
+	padding: 20px;
+}
+
+/*Para herdar propriedades que não vem por herança*/
+div{
+	border: inherit;
+	padding: inherit;
+}

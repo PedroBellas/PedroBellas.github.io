@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+section{
+	margin: 50px;
+	border: 3px solid #f50;
+	padding: 100px;
+	background-color: #dd0;
+}
+
+h1{
+	background-color: #5f0;
+	padding: 10px 50px;
+}
+
+h2{
+	background-color: #05f;
+	color: #fff;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 25px;
+	padding-bottom: 30px;
+}
+
+div{
+	font-size: 40px;
+	float: left;
+	padding: 10px 50px 100px 150px;
+	margin: 0 30px;
+	border: 15px solid #0f0f0f;
+}
+
+.c1{
+	background-color: orange;
+}
+
+.c2{
+	background-color: skyblue;
+}
+
+.c3{
+	background-color: tomato;
+}
