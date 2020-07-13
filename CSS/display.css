@@ -1,0 +1,33 @@
+body{
+	font-size: 40px;
+	color: #fff;
+	background-color: coral;
+}
+
+ul{
+	padding: 0;
+}
+
+li{
+	background-color: purple;
+}
+
+div{
+	background-color: seagreen;
+}
+
+span{
+	background-color: dodgerblue;
+}
+
+div, span, li{
+	width: 50%;
+	height: 80px;
+	padding-top: 30px;
+	text-align: center;
+	/*O span não aceita a altura e largura*/
+/*-------------------------------------------*/
+	/*Quando coloca o display block ele passa a aceitar*/
+	display: block;
+	/*Dependendo do display algumas propriedades são ignoradas*/
+}
