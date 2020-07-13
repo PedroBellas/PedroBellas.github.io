@@ -1,0 +1,66 @@
+body{
+	background-color: #222;
+	margin: 0;
+	padding: 0;
+}
+
+.c1{
+	background-color: red;
+}
+
+.c2{
+	background-color: green;
+}
+
+.c3{
+	background-color: blue;
+}
+
+.c4{
+	background-color: purple;
+}
+
+.c5{
+	background-color: orange;
+}
+
+.c6{
+	background-color: gold;
+}
+
+.c7{
+	background-color: #fff;
+}
+
+.c8{
+	background-color: skyblue;
+}
+
+.c9{
+	background-color: coral;
+	float: right;
+}
+
+.c10{
+	background-color: lightgreen;
+	clear: right;
+	float: left;
+}
+
+.c11{
+	background-color: #9f0;
+	clear: both;
+}
+
+.c12{
+	background-color: #d0d;
+}
+
+section > div{
+	float: left;
+}
+
+div{
+	height: 250px;
+	width: 250px;
+}
