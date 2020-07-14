@@ -1,0 +1,27 @@
+body{
+	font-size: 2vw; 
+}
+
+.unidades-absolutas{
+	font-size: 40px;
+	padding: 20px;
+	border: 5px solid #222;
+	margin: 30px;
+	top: 150px;
+	left: 200px;	
+	/*Não tem a ver com unidades absolutas (necessário para que algumas propriedades funcionem, por exemplo top e left)*/
+	position: absolute;
+}
+
+.unidades-relativas{/*Pensando sempre em acessibilidade*/
+	font-size: 4em;
+	padding: 5%;
+	border: solid 1vw #0f0f0f;
+	margin: 0.8%;
+	width: 20vw;
+	height: 15vh;
+	bottom: 5%;
+	right: 5%;
+	/*Não tem a ver com unidades absolutas (necessário para que algumas propriedades funcionem, por exemplo top e left)*/
+	position: absolute;
+}
