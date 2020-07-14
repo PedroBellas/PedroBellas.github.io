@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.fora{
+	position: relative;
+	background-color: orange;
+	width: 400px;
+	height: 400px;
+	padding: 50px;
+}
+
+.dentro{
+
+	background-color: mediumvioletred;
+	/*height: 90%;*/
+	height: 100px;
+	width: 100%;
+}
+
+.abs{
+	/*Ocupa o espaço do conteudo e do padding também*/
+	position: absolute;
+}
+
+.rel{
+
+	/*Ocupa o espaço do conteudo*/
+	/*position: static;*/
+	position: relative;
+
+}
+
+.fix{
+	/*Ocupa 100% referente ao viewport e fica travado na posição*/
+	position: fixed;
+}
