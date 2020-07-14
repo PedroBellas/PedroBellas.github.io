@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	width: 200px;
+	height: 200px;
+	margin: 5px;
+	display: inline-block;
+}
+
+body{
+	/*Utilizando o nome padrão da cor*/
+	background-color: black;
+}
+
+.cor1{
+	/*Utilizando o hexadecimal*/
+	background-color: #f67809;
+}
+
+.cor2{
+	/*Utilizando o hexadecimal simplificado*/
+	background-color: #adb;
+}
+
+.cor3{
+	/*Utilizando o hexadecimal com transparencia*/
+	background-color: #edc912bc;
+}
+
+.cor4{
+	/*Utilizando o hexadecimal simplificado com transparencia*/
+	background-color: #e928;
+}
+
+.cor5{
+	/*Utilizando função rgb*/
+	background-color: rgb(55, 110, 220);
+}
+
+.cor6{
+	/*Utilizando função rgba*/
+	background-color: rgba(255, 110, 220, 0.4);
+}
+
+.cor7{
+	/*Utilizando função hsl*/
+	background-color: hsl(299, 100%, 50%);
+}
+
+.cor8{
+	/*Utilizando função hsla*/
+	background-color: hsla(299, 100%, 50%, 0.5);
+}
+
+.cor9{
+	/*Utilizando função gradiente*/
+	background: linear-gradient(to top, #d5e, #e92);
+}
