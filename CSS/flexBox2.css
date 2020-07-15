@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	border: 5px solid dodgerblue;
+	font-size: 40px
+}
+
+.flex-container div{
+	box-sizing: border-box;
+	width: 100px;
+	height: 300px;
+	/*Definindo a logica d eocupação do espaço - */
+	/*Pega o espaço que sobrou, divide pelos itens e multiplica o resultado pelo valor de flex-grow ou flex-shrink*/
+	flex-grow: 1;
+}
+
+.flex-container{
+	display: flex;
+	width: 600px;
+	height: 300px;
+}
+
+.flex-container div:nth-child(3){
+	background-color: indianred;
+	flex-grow: 2;
+	/*Permite manipular a ordem de um item numa flex box (quanto menor a ordem, primeiro ele será exibido)*/
+	order: -1;
+	/*Alinhando o elemento*/
+	align-self: stretch;
+}
