@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p{
+	/*Valores padrões*/
+	font-size: 1em;
+	/*
+	font-size: 100%;
+	font-size: 16px;
+	font-size: 12pt;
+	*/
+
+	/*Unidades absolutas*/
+	/*
+	font-size: 100px;
+	font-size: 72pt;
+	font-size: 1in;
+	*/
+
+	/*Unidades relativas*/
+	/*
+	font-size: 2.2em;
+	font-size: 2.2rem; /*Pega a referencia da Raiz*/
+	/*
+	font-size: 50vh;
+	font-size: 10vw;
+	*/
+
+	/*Fontes do navegador*/
+	/*
+	Serif = tem os traços embaixo das letras, ideal para textos longos
+	Sans-serif= Não tem os tracinhos embaixo das letras, ideal para titulo
+	cursive= letra decorada, ideal para logo ou textos que precisem de um estilo mais chamativo
+	*/
+	font-family: Verdana, sans-serif;
+
+
+	/*Peso da fonte*/
+	font-weight: bold;
+	/*é possivel usar valores de 100 à 900*/
+
+
+	/*Estilo da fonte*/
+	font-style: italic;
+
+	/*Formatação de texto*/
+	/*Formata as letras do texto*/
+	text-transform: capitalize;
+	/*Formata a decoração do texto*/
+	text-decoration: overline underline line-through;
+	/*Separação entre palavras*/
+	word-spacing: 10px;
+	/*Separação entre letras*/
+	letter-spacing: 5px;
+	/*Separação entre linhas*/
+	line-height: 2.5em;
+	/*Alinhamento do texto*/
+	text-align: center;
+
+
+}
+
+/*Transformando o a num botão*/
+
+.botao{
+	font-size: 28px;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 25px;
+}
+
+.destaque{
+
+	color: #fff;
+	background-color: tomato;
+	box-shadow: 0.5px 0.5px 0.1px 0.1px black;
+}
+
+.destaque:active {
+
+	box-shadow: none;
+
+}
