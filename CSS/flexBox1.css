@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	font-size: 40px;
+	border: 5px solid dodgerblue;
+	margin: 5px;
+}
+
+.big{
+	font-size: 2em;
+}
+
+.flex-container{
+	width: 25%;
+	height: 500px;
+	/*Definindo como flex*/
+	display: flex;
+	/*Definindo a direção de eixo do flex (main axis)*/
+	flex-direction: row;
+	/*Definindo a quebra de linha*/
+	flex-wrap: wrap;
+	/*Misturando o flex-direction e flex-wrap*/
+	/*
+	flex-flow: column wrap;
+	*/
+	/*Justificar os conteudos no eixo main axis*/
+	justify-content: space-between;
+	/*Justificar os conteudos no eixo Cross axis*/
+	align-items: baseline;
+	/*Alinhamento de linhas*/
+	align-content: center;
+
+}
