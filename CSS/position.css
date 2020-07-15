@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+}
+
+p{
+
+	padding-bottom: 2000px;
+
+}
+
+div{
+	font-size: 60px;
+	padding: 30px;
+	border: 5px solid #0f0f0f;
+}
+
+.static{
+	/*padrão*/
+	position: static;
+	background-color: steelblue;
+	/*Desconsidera essas propriedades*/
+	top: 100px;
+	left: 100px;
+}
+
+.fixed{
+	position: fixed;
+	background-color: tomato;
+	bottom: 30px;
+	right: 0px;
+}
+
+.relative1{
+	position: relative;
+	background-color: seagreen;
+	/*Leva em consideração a propriedade, mas referente ao componente anterior*/
+	left: 50px;
+	top: 5px;
+
+}
+
+.absolute1{
+	position: absolute;
+	background-color: purple;
+	/*Ele passa por cima de outros componentes*/
+	left: 350px;
+	top: 120px;
+}
+
+.relative2{
+
+	position: relative;
+	background-color: slategray;
+	left: 750px;
+	top: 1000px;
+	width: 200px;
+	height: 200px;
+}
+
+.absolute2{
+	position: absolute;
+	/*Ele é alinhado referente ao pai, quando o pai é relativo, caso fosse static ele levaria em consideração a pagina e não a div pai*/
+	left: 10px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+}
+
+.sticky{
+	position: ~webkit-sticky; /*Colocando a propriedade padrão do stick para o safari*/
+	position: sticky;
+	/*Ele gruda algo após sofre a rolagem*/
+	background-color: #ff0;
+	top: 0px;
+}
