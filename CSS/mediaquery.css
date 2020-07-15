@@ -1,0 +1,37 @@
+div{
+	font-size: 40px;
+	margin: 20px;
+	padding: 20px;
+	background-color: orange;
+	border: 5px solid #0f0f0f;
+	display: none;
+}
+
+/*Definindo media query*/
+@media (max-width: 600px){
+
+	.muito-pequeno{
+		display: block;
+	}
+
+}
+
+/*A media querry funciona como ou nas opções, ou uma ou outra precisa ser verdadeira para executar*/
+
+@media (max-width: 1000px), (orientation: portrait){
+
+	.pequeno-retrato{
+		display: block;
+	}
+
+}
+
+/*Agora funciona como e, as duas opções precisam ser verdadeiras*/
+
+@media (min-width: 500px) and (max-width: 1000px){
+
+	.intervalo{
+		display: block;
+	}
+
+}
