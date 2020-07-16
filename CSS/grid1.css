@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Css Grid deve ser aplicado no conteiner*/
+html, body{
+	margin: 20px;
+	height: calc(100% - 40px);
+	background-color: lightgray;
+}
+
+div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	background-color: #fff;
+	color: #0f0f0f;
+	border: 5px solid dodgerblue;
+}
+
+body{
+	display: grid;
+	/*Define a organização das colunas*/
+	/*
+	grid-template-columns: 50% 50%; /*Define 2 colunas que ocupam 50% do espaço
+	grid-template-columns: 200px 20% 1fr /*Misturando valores
+	*/
+	grid-template-columns: 3fr 6fr 3fr;/*Podia ser 1fr 2fr 1fr tbm, mas o bootstrap usam o padrão de 12*/
+
+	/*Define a organização das linhas*/
+	/*
+	grid-template-rows: 50% 25% 12.5% 12.5%;
+	grid-template-rows: 100px 1fr;/*O componentes que sobram, ficam exatamente do tamanho necessario para renderizar o conteudo
+	grid-template-rows: 100px 100px;/*Os componentes pegam o espaço restante
+	grid-template-rows: 100px auto; /*O auto devide de forma igualitária*/
+	*/
+	grid-template-rows: auto;
+}
+
+.d8{
+
+	grid-column-start: 2;
+	grid-column-end: 4;
+	/*Pode ser feito da sehuinte forma:
+	grid-column-end: span 2;
+	*/
+	grid-row-start: 3;
+	grid-row-end: 5;
+	/*Pode ser feito da sehuinte forma:
+	grid-row-end: span 2;
+	*/
+
+}
+
+/*é possivel haver sobreposição de celulas*/
+
+.d10, .d11{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+.d10{
+	z-index: 1;
+}
