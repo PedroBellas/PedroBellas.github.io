@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	border: 5px solid dodgerblue;
+	font-size: 40px;
+}
+
+.flex-container div{
+	box-sizing: border-box;
+	/*Propriedade oficial para falar sobre largura de um determinado elemento*/
+	/*Flex-basis segue o sentido do main axis*/
+	flex-basis: 100px;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.flex-container div:nth-child(4){
+	/*Propriedade de atalho que define o row shrink e basis*/
+	flex: 3 6 100px;
+}
