@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color: #0D252D;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+
+.exercicio div{
+	font-size: 3em;
+	border: 5px solid #fff;
+	padding: 20px 40px;
+	margin: 10px;
+}
+
+.exercicio div:nth-of-type(1){
+	background-color: #fa0;
+}
+
+.exercicio div:nth-of-type(2){
+	background-color: crimson;
+}
+
+.exercicio div:nth-of-type(3){
+	background-color: darkcyan;
+}
+
+.exercicio div:nth-of-type(4){
+	background-color: darkorchid;
+}
+
+.exercicio .destaque{
+	border: 10px solid #a9ff00;
+	color: #a9ff00;
+	font-weight: bold;
+}
