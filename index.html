@@ -1,200 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Index - EXE.CSS</title>
-	<link rel="stylesheet" type="text/css" href="CSS/index.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+	<title>PedroBellas - Estudo</title>
+	<link rel="shortcut icon" href="img/icon.png" /><!--Configurando imagem que ficara do lado do titulo do site-->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
 </head>
 <body>
 	<header>
-		<h1>Exercicios de HTML + CSS</h1>
+		<div class="logo">
+			<a href="">
+				<h1>Pedro<span>Bellas</span></h1>
+			</a>
+		</div>
+		<div class="hamburguer-menu">
+			<div id="hamburguer" class="hamburguer"></div>
+		</div>
+		<ul class="menu">
+			<li>
+				<a href="#" class="simple-text active">Texto1</a>
+			</li>
+			<li>
+				<a href="#" class="simple-text">Texto2</a>
+			</li>
+			<li>
+				<a href="#" class="simple-text">Texto3</a>
+			</li>
+			<li>
+				<a href="#" class="simple-text">Texto4</a>
+			</li>
+		</ul>
 	</header>
-	<div>
-		<img src="https://cursosciatec.com.br/home/wp-content/uploads/2018/11/BANNER-HTML5-CSS3-JAVASCRIPT-1.png" />
-	</div>
-	<div>
-		<aside>
-			
-		</aside>
-		<section class="section-examples">
-			<h2>Area de Exemplos</h2>
+	<article class="banner">
+		<section>
+			<h2>Aprenda o poder da Programação</h2>
 			<ul>
-				<li>
-					<span wm-folder>HTML</span>
-					<ul>
-						<li>
-							<a href="HTML/estruturaHTML.html" target="_blank">Estrutura HTML</a>
-						</li>
-						<li>
-							<a href="HTML/textoPuro.html" target="_blank">Texto Puro</a>
-						</li>
-						<li>
-							<a href="HTML/lista.html" target="_blank">Listas</a>
-						</li>
-						<li>
-							<a href="HTML/link.html" target="_blank">Links</a>
-						</li>
-						<li>
-							<a href="HTML/tabela.html" target="_blank">Tabelas</a>
-						</li>
-						<li>
-							<a href="HTML/form.html" target="_blank">Formulários</a>
-						</li>
-						<li>
-							<a href="HTML/image.html" target="_blank">Imagens</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span wm-folder>CSS</span>
-					<ul>
-						<li>
-							<a href="CSS/introducao.html" target="_blank">Introdução</a>
-						</li>
-						<li>
-							<a href="CSS/anatomia.html" target="_blank">Anatomia</a>
-						</li>
-						<li>
-							<a href="CSS/origem.html" target="_blank">Origem</a>
-						</li>
-						<li>
-							<a href="CSS/classeTag.html" target="_blank">Classe Tag</a>
-						</li>
-						<li>
-							<a href="CSS/seletor.html" target="_blank">Seletores</a>
-						</li>
-						<li>
-							<a href="CSS/esp1.html" target="_blank">Especifidade #01</a>
-						</li>
-						<li>
-							<a href="CSS/esp2.html" target="_blank">Especifidade #02</a>
-						</li>
-						<li>
-							<a href="CSS/heranca.html" target="_blank">Herança</a>
-						</li>
-						<li>
-							<a href="CSS/boxmodel.html" target="_blank">Box Model</a>
-						</li>
-						<li>
-							<a href="CSS/margincollapse.html" target="_blank">Margin Collapse</a>
-						</li>
-						<li>
-							<a href="CSS/display.html" target="_blank">Display</a>
-						</li>
-						<li>
-							<a href="CSS/alturaLargura.html" target="_blank">Altura & Largura</a>
-						</li>
-						<li>
-							<a href="CSS/boxSizing.html" target="_blank">Box Sizing</a>
-						</li>
-						<li>
-							<a href="CSS/overflow.html" target="_blank">Overflow</a>
-						</li>
-						<li>
-							<a href="CSS/float.html" target="_blank">Float</a>
-						</li>
-						<li>
-							<a href="CSS/cores.html" target="_blank">Cores</a>
-						</li>
-						<li>
-							<a href="CSS/unidades.html" target="_blank">Unidades #01</a>
-						</li>
-						<li>
-							<a href="CSS/unidades2.html" target="_blank">Unidades #02</a>
-						</li>
-						<li>
-							<a href="CSS/textos.html" target="_blank">Textos</a>
-						</li>
-						<li>
-							<a href="CSS/position.html" target="_blank">Position</a>
-						</li>
-						<li>
-							<a href="CSS/mediaquery.html" target="_blank">Media Query</a>
-						</li>
-						<li>
-							<a href="CSS/MENU/index.html" target="_blank">Desafio Menu</a>
-						</li>
-						<li>
-							<a href="CSS/CARD/index.html" target="_blank">Desafio Card</a>
-						</li>
-						<li>
-							<a href="CSS/flexBox1.html" target="_blank">Flex Box #1</a>
-						</li>
-						<li>
-							<a href="CSS/flexBox2.html" target="_blank">Flex Box #2</a>
-						</li>
-						<li>
-							<a href="CSS/flexBox3.html" target="_blank">Flex Box #3</a>
-						</li>
-						<li>
-							<a href="CSS/MENU-FLEX/index.html" target="_blank">Menu Flex Box</a>
-						</li>
-						<li>
-							<a href="CSS/grid1.html" target="_blank">CSS Grid #1</a>
-						</li>
-						<li>
-							<a href="CSS/grid2.html" target="_blank">CSS Grid #2</a>
-						</li>
-						<li>
-							<a href="CSS/grid3.html" target="_blank">CSS Grid #3</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span wm-folder>JavaScript</span>
-					<ul>
-						<li>
-							<a href="#">DOM</a>
-						</li>
-						<li>
-							<a href="JS/ELEMENTO1" target="_blank">Elementos #1</a>
-						</li>
-						<li>
-							<a href="JS/ELEMENTO2" target="_blank">Elementos #2</a>
-						</li>
-						<li>
-							<a href="JS/ELEMENTO3" target="_blank">Elementos #3</a>
-						</li>
-						<li>
-							<a href="JS/ELEMENTO4" target="_blank">Elementos #4</a>
-						</li>
-						<li>
-							<a href="JS/ATRIBUTO1" target="_blank">Atributos #1</a>
-						</li>
-						<li>
-							<a href="JS/ATRIBUTO2" target="_blank">Atributos #2</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">Classes</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">Mudar HTML #1</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">Mudar HTML #2</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">Eventos #1</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">Eventos #2</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">Eventos #3</a>
-						</li>
-						<li>
-							<a href="#" target="_blank">Eventos #4</a>
-						</li>
-					</ul>
-				</li>
+				<li>De vida para sua criatividade.</li>
+				<li>Controle a web do jeito que você quiser.</li>
+				<li>Seja referencia em tecnologias.</li>
+				<li>Torne-se um Deus FullStack.</li>
+				<li>Aprenda html, css, js, php e mysql.</li>
 			</ul>
 		</section>
 		<aside>
-			
+			<div class="loader">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</aside>
-	</div>
-	<script type="text/javascript" src="CSS/index.js"></script>
+	</article>
+	<script type="text/javascript" src="JS/script.js"></script>
 </body>
 </html>
