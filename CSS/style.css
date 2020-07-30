@@ -1,4 +1,4 @@
-/*Setando os valores*/
+/*Setando os valores genericos*/
 *{
 	margin: 0;
 	padding: 0;
@@ -16,24 +16,45 @@ a{
 
 body{
 	background-color: #333;
+	overflow-x: hidden;
 }
 
 .simple-text{
 	color: #fff;
 }
 
-/*Ativação*/
+
 .active{
 	color: #05FF1E;
 }
 
+/*
+===========================
+Scroll personalizado
+===========================
+*/
 
-/*Iniciando os cabeçalho*/
+body::-webkit-scrollbar {
+	width: 5px;
+	background-color: #1a1a1a;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #05FF1E;
+	border-radius: 5px;
+}
+
+/*
+===========================
+Cabeçalho
+===========================
+*/
 header{
 	width: 100%;
 	height: 60px;
 	background-color: #1a1a1a;
 
+	z-index: 9999;
 
 	top: 0;
 	position: sticky;
@@ -45,6 +66,7 @@ header > div{
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
+
 }
 
 /*Area do logo*/
@@ -186,9 +208,163 @@ Banner
 ===========================
 */
 
+.banner-box{
+	position: relative;
+	height: 30vw;
+}
+/*Carregamento pré banner*/
 
+.hidden{
+	display: none;
+}
 
+.banner-loading{
 
+	position: absolute;
+
+	/*display: none;*/
+
+	width: 100%;
+
+	height: 100%;
+
+	z-index: 99;
+
+	background-color: #1a1a1a;
+
+	cursor: progress;
+}
+
+.loading-bar{
+	content: '';
+	position: absolute;
+
+	/*Criando estrutura*/
+	width: 80%;
+	height: 2.5%;
+	border-radius: 20px;
+	background: #fff;
+
+	/*Posicionando*/
+	top: 40%;
+	left: 10%;
+}
+
+.progress-bar{
+	width: 0%;
+	height: 100%;
+	background-color: #05FF1E;
+	border-radius: 20px;
+
+	/*Definindo tempo de animação*/
+	transition: 5s ease;	
+}
+
+.banner-loading span{
+	color: #fff;
+	font-size: 1.5em;
+
+	position: absolute;
+
+	top: 50%;
+	left: 45%;
+
+	animation: hidden 3s infinite;
+}
+
+.full{
+	width: 100%;
+}
+
+@keyframes hidden{
+
+	0%{
+
+		opacity: 1;
+
+	}
+	50%{
+
+		opacity: 0.1;
+
+	}
+	100%{
+
+		opacity: 1;
+
+	}
+
+}
+
+ /*Banner Animado*/
+.banner{
+
+	display: none;
+
+	position: relative;
+
+	height: 100%;
+	
+	background-color: #2a2a2a;
+
+	z-index: 9;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner h2{
+	font-size: 1.5em;
+	z-index: 99;
+	color: #fff;	
+}
+
+.banner i{
+	font-size: 1.5em;
+	color: #05FF1E;	
+	font-style: normal;
+}
+
+/*Animação*/
+
+.ball li{
+    width: 10vw;
+    height: 10vw;
+    background-image: linear-gradient(to left, #fff, darkgray);
+    opacity: 50%;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    animation: move 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+
+    from{
+        transform: translateY(150%);
+    }
+    to{
+        transform: translateY(-450%);
+
+    }
+
+}
+
+/*
+===========================
+Main
+===========================
+*/
+
+main{
+	position: relative;
+	z-index: 99;
+	height: 500px;
+	background-color: #333;
+}
 
 /*
 ===========================
@@ -203,7 +379,6 @@ Celulares
 	}
 
 	/*Menu lateral*/
-
 	.menu{
 		position: fixed;
 		right: -50%;
@@ -227,6 +402,12 @@ Celulares
 		width: 100%;
 		height: auto;
 		margin: 5% 0;
+	}
+
+	/*Banner*/
+
+	.banner-loading span{
+		left: 32.5%;
 	}
 
 }
