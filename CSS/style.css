@@ -210,19 +210,13 @@ Banner
 
 .banner-box{
 	position: relative;
-	height: 30vw;
+	height: calc(100vh - 60px);
 }
 /*Carregamento pré banner*/
-
-.hidden{
-	display: none;
-}
 
 .banner-loading{
 
 	position: absolute;
-
-	/*display: none;*/
 
 	width: 100%;
 
@@ -233,21 +227,23 @@ Banner
 	background-color: #1a1a1a;
 
 	cursor: progress;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.hidden{
+	display: none;
 }
 
 .loading-bar{
-	content: '';
-	position: absolute;
-
 	/*Criando estrutura*/
 	width: 80%;
-	height: 2.5%;
+	height: 2%;
 	border-radius: 20px;
 	background: #fff;
-
-	/*Posicionando*/
-	top: 40%;
-	left: 10%;
 }
 
 .progress-bar{
@@ -260,20 +256,18 @@ Banner
 	transition: 5s ease;	
 }
 
+.full{
+	width: 100%;
+}
+
 .banner-loading span{
+
+	margin-top: 2%;
+
 	color: #fff;
 	font-size: 1.5em;
 
-	position: absolute;
-
-	top: 50%;
-	left: 45%;
-
 	animation: hidden 3s infinite;
-}
-
-.full{
-	width: 100%;
 }
 
 @keyframes hidden{
@@ -344,11 +338,10 @@ Banner
 @keyframes move {
 
     from{
-        transform: translateY(150%);
+        transform: translate3d(10vh,50vh,0);
     }
     to{
-        transform: translateY(-650%);
-
+        transform: translate3d(-10vh,-100vh,0);
     }
 
 }
