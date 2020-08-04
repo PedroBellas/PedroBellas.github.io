@@ -573,6 +573,8 @@ Area de termos da pagina
 	box-shadow: 1.25px 1.25px 1px 1px #1a1a1a;
 
 	cursor: pointer;
+
+	display: none;
 }
 
 .terms-btn:hover{

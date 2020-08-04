@@ -114,5 +114,6 @@ btnYesTerm.onclick = function(){
 
 	termsArea.classList.remove('show-area');
 	archiveArea.classList.add('show-area');
+	btnTerm.classList.remove('show-area');
 
 }
