@@ -5,6 +5,10 @@ const lBox = document.querySelector('#loading');
 const ulBall = document.querySelector("ul.ball");
 const corpo = document.querySelector("body");
 
+const area1 = document.querySelector('#area1');
+const area2 = document.querySelector('#area2');
+const area3 = document.querySelector('#area3');
+
 for(let i = 0; i < 15; i++){
 
 	const li = document.createElement("li");
@@ -19,7 +23,7 @@ for(let i = 0; i < 15; i++){
 	li.style.animationDuration = start+"s";
 }
 
-botao.onclick = function(e){
+botao.onclick = function(){
 
 	if(botao.classList[1] == 'active-btn'){
 		menu.classList.remove('active-menu');
@@ -36,7 +40,7 @@ function load() {
 	lBox.classList.add('hidden');
 }
 
-corpo.onload = function(e){
+corpo.onload = function(){
 
 	bar.classList.add('full');
 
@@ -44,3 +48,45 @@ corpo.onload = function(e){
 
 }
 
+function show(e) {
+	e.classList.add('slow-show');
+}
+
+function hidd(e){
+	e.classList.remove('slow-show');	
+}
+
+/*Scroll*/
+
+window.onscroll = function(e){
+
+	/*Pega o ponto de cima
+	console.log(window.scrollY);
+
+	/*Pegando a posição de um elemento
+	console.log(document.querySelector('#test').getBoundingClientRect());
+
+	/*Fazendo a comparação*/
+
+	if(window.scrollY > area1.getBoundingClientRect().y){
+		show(area1);
+
+		if (window.scrollY > area2.getBoundingClientRect().y + area1.getBoundingClientRect().height) {
+			show(area2);
+
+			if (window.scrollY > area3.getBoundingClientRect().y + area2.getBoundingClientRect().height + area3.getBoundingClientRect().height) {
+				show(area3);
+			}
+			else{
+				hidd(area3);
+			}
+		}
+		else{
+			hidd(area2);
+		}
+	}
+	else{
+		hidd(area1);
+	}
+
+}

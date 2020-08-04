@@ -368,14 +368,20 @@ Area de conteudo
 	padding: 5% 0;
 	width: 100%;
 
+	
 	display: flex;
 	flex-direction: row;
+
+	opacity: 0;
+	transition: 2s linear;
 }
-/*
-.content-area > :nth-child(1){
-	background-color: red;
+
+.slow-show{
+
+	opacity: 1;
+
 }
-*/
+
 .change-order{
 	order: 0;
 }
@@ -445,10 +451,6 @@ Area de conteudo - Texto
 
 .text-area p a:hover{
 	font-size: 1.05em;
-}
-
-.fernanda{
-	background-color: #fff;
 }
 
 /*
