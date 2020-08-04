@@ -9,6 +9,13 @@ const area1 = document.querySelector('#area1');
 const area2 = document.querySelector('#area2');
 const area3 = document.querySelector('#area3');
 
+const btnTerm = document.querySelector('#terms-btn');
+const termsArea = document.querySelector('#terms-full-area');
+const btnNoTerm = document.querySelector('#no-terms-btn');
+const btnYesTerm = document.querySelector('#yes-terms-btn');
+const archiveArea = document.querySelector('#archive-area');
+
+
 for(let i = 0; i < 15; i++){
 
 	const li = document.createElement("li");
@@ -88,5 +95,24 @@ window.onscroll = function(e){
 	else{
 		hidd(area1);
 	}
+
+}
+
+btnTerm.onclick = function(){
+
+	termsArea.classList.add('show-area');
+
+}
+
+btnNoTerm.onclick = function(){
+
+	termsArea.classList.remove('show-area');
+
+}
+
+btnYesTerm.onclick = function(){
+
+	termsArea.classList.remove('show-area');
+	archiveArea.classList.add('show-area');
 
 }
