@@ -10,7 +10,7 @@ for(let i = 0; i < 15; i++){
 	const li = document.createElement("li");
 	ulBall.appendChild(li);
 
-	const position = Math.random() * (80) + 1;
+	const position = Math.random() * (75) + 1;
 	const time = Math.random() * (5 - 0.1) + 0.1;
 	const start = Math.random() * (20 - 10) + 10;
 
