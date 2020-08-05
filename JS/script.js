@@ -9,12 +9,7 @@ const area1 = document.querySelector('#area1');
 const area2 = document.querySelector('#area2');
 const area3 = document.querySelector('#area3');
 
-const btnTerm = document.querySelector('#terms-btn');
-const termsArea = document.querySelector('#terms-full-area');
-const btnNoTerm = document.querySelector('#no-terms-btn');
-const btnYesTerm = document.querySelector('#yes-terms-btn');
-const archiveArea = document.querySelector('#archive-area');
-
+const runningBall = document.querySelector('#run-ball');
 
 for(let i = 0; i < 15; i++){
 
@@ -98,22 +93,32 @@ window.onscroll = function(e){
 
 }
 
-btnTerm.onclick = function(){
 
-	termsArea.classList.add('show-area');
-
+function die(){
+	runningBall.style.display = "none";
 }
 
-btnNoTerm.onclick = function(){
+runningBall.onclick = function(){
+	const ballSon = document.querySelectorAll('#run-ball span');
 
-	termsArea.classList.remove('show-area');
+	var number = ballSon.length;
+	
+	if(number == 7){
 
-}
+		runningBall.classList.add('die-ball');
+		setTimeout(die, 4000);
 
-btnYesTerm.onclick = function(){
+	}
+	else{
 
-	termsArea.classList.remove('show-area');
-	archiveArea.classList.add('show-area');
-	btnTerm.classList.remove('show-area');
+		const span = document.createElement("span");
+		runningBall.appendChild(span);
 
+		var value = (number + 1) * 5;
+
+		span.style.filter = 'blur('+value+'px)';
+
+		console.log(runningBall);
+
+	}
 }

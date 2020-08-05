@@ -478,6 +478,8 @@ Area de animação - Ampulheta
 
 	animation: run 8s infinite;
 
+	transition: 4s ease;
+
 }
 
 .run-ball span{
@@ -489,6 +491,12 @@ Area de animação - Ampulheta
 	background: linear-gradient(#05FF1E, #fff);	
 
 	border-radius: 50%;
+
+	cursor: pointer;
+}
+
+.die-ball {
+	opacity: 0.02;
 }
 
 .run-ball span:nth-child(1){
@@ -541,122 +549,6 @@ Area de animação - Ampulheta
 
 /*
 ===========================
-Area de termos da pagina
-===========================
-*/
-
-.terms-area{
-	width: 90%;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	margin: 2.5% 5%;
-}
-
-.terms-area > p{
-	text-align: center;
-	margin-bottom: 1.5%;
-
-	font-size: 1.5em;
-	color: #fff;
-}
-
-.terms-btn{
-	font-size: 1.5em;
-	padding: 1%;
-	border-radius: 5px;
-
-	background-color: #05FF1E;
-	box-shadow: 1.25px 1.25px 1px 1px #1a1a1a;
-
-	cursor: pointer;
-
-	display: none;
-}
-
-.terms-btn:hover{
-	box-shadow: 0px 0px 0px 0px #333;
-}
-
-/*
-===========================
-Area de termos completa
-===========================
-*/
-
-.terms-text-area{
-	left: 30%;
-	top: calc(0% + 80px);
-
-	width: 40%;
-	height: 80vh;
-
-	background-color: #1a1a1a;
-
-	border-radius: 25px;
-
-	position: fixed;
-
-	z-index: 9999;
-
-	display: none;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	padding: 5%;
-}
-
-.terms-text-area p{
-	width: 100%;
-	height: 80%;
-
-	color: #fff;
-
-	font-size: 1.2em;
-
-	text-align: justify;
-}
-
-.terms-btn-area{
-	width: 100%;
-	height: 20%;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.terms-btn-area div{
-	font-size: 1.5em;
-	font-weight: bold;
-
-	cursor: pointer;
-}
-
-.no{
-	color: red;
-	transition: 1s ease;
-}
-
-.yes{
-	color: #05FF1E;
-	transition: 2s ease;
-}
-
-.no:hover{
-	font-size: 1.6em;
-}
-
-.yes:hover{
-	font-size: 1.6em;
-}
-
-/*
-===========================
 Area de arquivos
 ===========================
 */
@@ -665,8 +557,13 @@ Area de arquivos
 .archive-area{
 	width: 100%;
 	height: 500px;	
-	background-color: #fff;
+	background-color: #333;
 	display: none;
+	border-top: 3px solid #05FF1E;
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /*
@@ -674,6 +571,10 @@ Area de arquivos
 Metodos Gerais
 ===========================
 */
+
+.slow-show{
+	opacity: 1;
+}
 
 .show-area{
 	display: flex;
@@ -703,7 +604,7 @@ Celulares
 		align-items: center;
 		justify-content: flex-start;
 
-		transition: 2.5s;
+		transition: 1.5s;
 	}
 
 	.active-menu{
