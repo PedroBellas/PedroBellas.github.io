@@ -11,6 +11,13 @@ const area3 = document.querySelector('#area3');
 
 const runningBall = document.querySelector('#run-ball');
 
+const idHtml = document.querySelector('#html');
+const idCss = document.querySelector('#css');
+const idJs = document.querySelector('#js');
+const areaHtml = document.querySelector('#html-area');
+const areaCss = document.querySelector('#css-area');
+const areaJs = document.querySelector('#js-area');
+
 for(let i = 0; i < 15; i++){
 
 	const li = document.createElement("li");
@@ -118,7 +125,49 @@ runningBall.onclick = function(){
 
 		span.style.filter = 'blur('+value+'px)';
 
-		console.log(runningBall);
+	}
+}
+
+
+/*Area de id e area*/
+idHtml.onclick = function(){
+
+	if(areaHtml.classList[2] == 'drop-down-area'){
+
+		areaHtml.classList.remove('drop-down-area');		
+
+	}
+	else{
+
+		areaHtml.classList.add('drop-down-area');
+
+	}
+}
+
+idCss.onclick = function(){
+
+	if(areaCss.classList[2] == 'drop-down-area'){
+
+		areaCss.classList.remove('drop-down-area');		
+
+	}
+	else{
+
+		areaCss.classList.add('drop-down-area');
+
+	}
+}
+
+idJs.onclick = function(){
+
+	if(areaJs.classList[2] == 'drop-down-area'){
+
+		areaJs.classList.remove('drop-down-area');		
+
+	}
+	else{
+
+		areaJs.classList.add('drop-down-area');
 
 	}
 }
