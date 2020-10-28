@@ -53,9 +53,9 @@ function scrollSuave(event){
 
 	window.scroll({
 
+		/*beahvior define o auto (instantaneo) e o smooth (suave)*/
 		/*560 = tamanho do banner principal*/
 		/*80 =  o menu fixo*/
-
 		top: secao.offsetTop + 560 - 80,
 		behavior: "smooth",
 	});
