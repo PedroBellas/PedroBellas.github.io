@@ -1,3 +1,9 @@
+/*
+===========================
+Declaração de elementos
+===========================
+*/
+
 const botao = document.querySelector('#hamburguer');
 const menu = document.querySelector('#menu');
 const bar = document.querySelector('#progress-bar');
@@ -5,18 +11,206 @@ const lBox = document.querySelector('#loading');
 const ulBall = document.querySelector("ul.ball");
 const corpo = document.querySelector("body");
 
+
+
 const area1 = document.querySelector('#area1');
 const area2 = document.querySelector('#area2');
 const area3 = document.querySelector('#area3');
-
 const runningBall = document.querySelector('#run-ball');
 
-const idHtml = document.querySelector('#html');
-const idCss = document.querySelector('#css');
-const idJs = document.querySelector('#js');
-const areaHtml = document.querySelector('#html-area');
-const areaCss = document.querySelector('#css-area');
-const areaJs = document.querySelector('#js-area');
+var valorHtml = 1;
+const html1 = document.querySelector('#areaHtml1');
+const html2 = document.querySelector('#areaHtml2');
+const anteriorHtml = document.querySelector('#anteriorHtml');
+const proximoHtml = document.querySelector('#proximoHtml');
+
+var valorCss = 1;
+const css1 = document.querySelector('#areaCss1');
+const css2 = document.querySelector('#areaCss2');
+const css3 = document.querySelector('#areaCss3');
+const css4 = document.querySelector('#areaCss4');
+const css5 = document.querySelector('#areaCss5');
+const css6 = document.querySelector('#areaCss6');
+const anteriorCss = document.querySelector('#anteriorCss');
+const proximoCss = document.querySelector('#proximoCss');
+
+var valorJs = 1;
+const js1 = document.querySelector('#areaJs1');
+const js2 = document.querySelector('#areaJs2');
+const anteriorJs = document.querySelector('#anteriorJs');
+const proximoJs = document.querySelector('#proximoJs');
+
+/*
+===========================
+Funções gerais Slider
+===========================
+*/
+
+function reaparecer(e){
+	e.classList.remove('desaparecer');
+}
+
+function desaparecer(e){
+	e.classList.add('desaparecer');
+}
+
+/*
+===========================
+Slider HTML
+===========================
+*/
+
+anteriorHtml.onclick = function(){
+
+	if (valorHtml == 1) {
+
+		desaparecer(html1);
+		reaparecer(html2);
+		valorHtml = 2;
+	}
+	else if(valorHtml == 2){
+		desaparecer(html2);
+		reaparecer(html1);
+		valorHtml--;	
+	}
+
+}
+proximoHtml.onclick = function(){
+
+	if (valorHtml == 1) {
+
+		desaparecer(html1);
+		reaparecer(html2);
+		valorHtml++;
+	}
+	else if(valorHtml == 2){
+		desaparecer(html2);
+		reaparecer(html1);
+		valorHtml = 1;	
+	}
+
+}
+
+
+/*
+===========================
+Slider CSS
+===========================
+*/
+
+anteriorCss.onclick = function(){
+
+	if (valorCss == 1) {
+
+		desaparecer(css1);
+		reaparecer(css6);
+		valorCss = 6;
+	}
+	else if(valorCss == 2){
+		desaparecer(css2);
+		reaparecer(css1);
+		valorCss--;	
+	}
+	else if(valorCss == 3){
+		desaparecer(css3);
+		reaparecer(css2);
+		valorCss--;		
+	}
+	else if(valorCss == 4){
+		desaparecer(css4);
+		reaparecer(css3);
+		valorCss--;		
+	}
+	else if(valorCss == 5){
+		desaparecer(css5);
+		reaparecer(css4);
+		valorCss--;		
+	}
+	else if(valorCss == 6){
+		desaparecer(css6);
+		reaparecer(css5);
+		valorCss--;		
+	}
+
+}
+proximoCss.onclick = function(){
+
+	if (valorCss == 1) {
+
+		desaparecer(css1);
+		reaparecer(css2);
+		valorCss++;
+	}
+	else if(valorCss == 2){
+		desaparecer(css2);
+		reaparecer(css3);
+		valorCss++;	
+	}
+	else if(valorCss == 3){
+		desaparecer(css3);
+		reaparecer(css4);
+		valorCss++;	
+	}
+	else if(valorCss == 4){
+		desaparecer(css4);
+		reaparecer(css5);
+		valorCss++;	
+	}
+	else if(valorCss == 5){
+		desaparecer(css5);
+		reaparecer(css6);
+		valorCss++;	
+	}
+	else if(valorCss == 6){
+		desaparecer(css6);
+		reaparecer(css1);
+		valorCss = 1;	
+	}
+
+}
+
+/*
+===========================
+Slider JS
+===========================
+*/
+
+anteriorJs.onclick = function(){
+
+	if (valorJs == 1) {
+
+		desaparecer(js1);
+		reaparecer(js2);
+		valorJs = 2;
+	}
+	else if(valorJs == 2){
+		desaparecer(js2);
+		reaparecer(js1);
+		valorJs--;	
+	}
+
+}
+proximoJs.onclick = function(){
+
+	if (valorJs == 1) {
+
+		desaparecer(js1);
+		reaparecer(js2);
+		valorJs++;
+	}
+	else if(valorJs == 2){
+		desaparecer(js2);
+		reaparecer(js1);
+		valorJs = 1;	
+	}
+
+}
+
+/*
+===========================
+Animação das bolinhas
+===========================
+*/
 
 for(let i = 0; i < 15; i++){
 
@@ -32,6 +226,12 @@ for(let i = 0; i < 15; i++){
 	li.style.animationDuration = start+"s";
 }
 
+/*
+===========================
+Animação do botão
+===========================
+*/
+
 botao.onclick = function(){
 
 	if(botao.classList[1] == 'active-btn'){
@@ -44,6 +244,12 @@ botao.onclick = function(){
 	}
 
 }
+
+/*
+===========================
+Animação do load
+===========================
+*/
 
 function load() {
 	lBox.classList.add('hidden');
@@ -65,16 +271,16 @@ function hidd(e){
 	e.classList.remove('slow-show');	
 }
 
-/*Scroll*/
+/*
+===========================
+Animação de scroll 
+===========================
+*/
 
 window.onscroll = function(e){
 
 	/*Pega o ponto de cima
-	console.log(window.scrollY);
-
 	/*Pegando a posição de um elemento
-	console.log(document.querySelector('#test').getBoundingClientRect());
-
 	/*Fazendo a comparação*/
 
 	if(window.scrollY > area1.getBoundingClientRect().y){
@@ -100,6 +306,12 @@ window.onscroll = function(e){
 
 }
 
+/*
+===========================
+Animação da bolinha correndo
+===========================
+*/
+
 
 function die(){
 	runningBall.style.display = "none";
@@ -124,50 +336,6 @@ runningBall.onclick = function(){
 		var value = (number + 1) * 5;
 
 		span.style.filter = 'blur('+value+'px)';
-
-	}
-}
-
-
-/*Area de id e area*/
-idHtml.onclick = function(){
-
-	if(areaHtml.classList[2] == 'drop-down-area'){
-
-		areaHtml.classList.remove('drop-down-area');		
-
-	}
-	else{
-
-		areaHtml.classList.add('drop-down-area');
-
-	}
-}
-
-idCss.onclick = function(){
-
-	if(areaCss.classList[2] == 'drop-down-area'){
-
-		areaCss.classList.remove('drop-down-area');		
-
-	}
-	else{
-
-		areaCss.classList.add('drop-down-area');
-
-	}
-}
-
-idJs.onclick = function(){
-
-	if(areaJs.classList[2] == 'drop-down-area'){
-
-		areaJs.classList.remove('drop-down-area');		
-
-	}
-	else{
-
-		areaJs.classList.add('drop-down-area');
 
 	}
 }

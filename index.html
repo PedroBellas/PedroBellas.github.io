@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+	<script type="text/javascript" src="JS/script.js" defer></script>
 </head>
 <body>
 	<header>
@@ -25,10 +26,10 @@
 					<a href="#" class="simple-text active">Home</a>
 				</li>
 				<li>
-					<a href="#" class="simple-text">Conteudo</a>
+					<a href="#area1" class="simple-text">Conteudo</a>
 				</li>
 				<li>
-					<a href="#" class="simple-text">Texto3</a>
+					<a href="#study" class="simple-text">Cards</a>
 				</li>
 				<li>
 					<a href="#" class="simple-text">Texto4</a>
@@ -61,7 +62,7 @@
 			<section class="text-area">
 				<h3>Minha Motivação</h3>
 				<p>
-					A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.
+					A minha motivação para criar esse site foi criar um lugar onde meus amigos de programção pudedssem fazer uma consulta rápida no código dos cards, além de testar experimentar minhas habilidades em programação e dar uma viajada no que eu consigo fazer.
 				</p>
 			</section>
 		</article>
@@ -70,22 +71,26 @@
 			<section class="text-area">
 				<h3>Sobre o Material</h3>
 				<p>
-					A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para <a href="https://www.cod3r.com.br/" target="_blank">Acesse Aqui</a> preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.
+					O materia que serviu de inspiração pra esse curso foi do curso de desenvolvimento web da Cod3r que você pode conhercer <a href="https://www.cod3r.com.br/" target="_blank">Acessando Aqui</a> Mas todos os cards foram desenvolvidos por mim, baseados nas aulas do curso da plataforma cod3r.
 				</p>
 			</section>
 			<aside class="fig-area change-order">
-				<img src="IMG/cod3r.png" />
+				<a href="https://www.cod3r.com.br/" target="_blank">
+					<img src="IMG/cod3r.png" />
+				</a>
 			</aside>
 		</article>
 
 		<article class="content-area" id="area3">
 			<aside class="fig-area change-order">
-				<img src="IMG/logo-white.png" />
+				<a href="https://github.com/PedroBellas" target="_blank">
+					<img src="IMG/logo-github.png" />
+				</a>
 			</aside>
 			<section class="text-area">
 				<h3>Meu GitHub</h3>
 				<p>
-					A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para <a href="https://github.com/PedroBellas" target="_blank">Acesse Aqui</a> preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.
+					Se você achou esse projeto minimamente interessante e quer descobrir o código por trás dele, de uma passada no meu <a href="https://github.com/PedroBellas" target="_blank">Github</a> lá tem outros projetos que eu tenho certeza que você vai curtir também, não esquece de curtir e seguir meu perfil.
 				</p>
 			</section>
 		</article>
@@ -102,392 +107,371 @@
 
 
 		<!--Inicio area dos arquivos-->
-		<section class="study-area">
+		<section class="study-area" id="study">
 
-			<!--Inicio do HTML-->
-
-			<div class="archive-title html" id="html">
-				<h2>Html</h2>
+			<!--Inicio HTML-->
+			<div class="titulo-card html">
+				<span>Html</span>
 			</div>
-			<article class="archive-area html-area" id="html-area">				
-
-				<div class="archive-item">
-					<a href="HTML/estruturaHTML.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Estrutura</h3>
-					</a>
+			<div class="slider">
+				<div class="anterior" id="anteriorHtml">
+					<span><</span>
 				</div>
 
-				<div class="archive-item">
-					<a href="HTML/textoPuro.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
+				<!--Carroussel 1-->
+				<div class="card-area" id="areaHtml1">
+					<div class="card">
+						<a href="HTML/estruturaHTML.html" target="_blank">
+							<div class="card-img html-card"></div>
+							<h3 class="archive-item-title">Estrutura</h3>
+						</a>
+					</div>	
+
+					<div class="card">
+						<a href="HTML/HTML/textoPuro.html" target="_blank">
+							<div class="card-img html-card"></div>
+							<h3 class="archive-item-title">Texto Puro</h3>
+						</a>
+					</div>	
+
+					<div class="card">
+						<a href="HTML/tabela.html" target="_blank">
+							<div class="card-img html-card"></div>
+							<h3 class="archive-item-title">Tabela</h3>
+						</a>
 					</div>
-					<h3 class="archive-item-title">Texto Puro</h3>
-					</a>
+
+					<div class="card">
+						<a href="HTML/lista.html" target="_blank">
+							<div class="card-img html-card"></div>
+							<h3 class="archive-item-title">Lista</h3>
+						</a>
+					</div>
+
+					<div class="card">
+						<a href="HTML/link.html" target="_blank">
+							<div class="card-img html-card"></div>
+							<h3 class="archive-item-title">Link</h3>
+						</a>
+					</div>
 				</div>
 
-				<div class="archive-item">
-					<a href="HTML/tabela.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Tabela</h3>
-					</a>
+				<!--Carroussel 2-->
+				<div class="card-area desaparecer" id="areaHtml2">
+
+					<div class="card">
+						<a href="HTML/form.html" target="_blank">
+							<div class="card-img html-card"></div>
+							<h3 class="archive-item-title">Formulários</h3>
+						</a>
+					</div>	
+
+					<div class="card">
+						<a href="HTML/image.html" target="_blank">
+							<div class="card-img html-card"></div>
+							<h3 class="archive-item-title">Imagem</h3>
+						</a>
+					</div>	
+
 				</div>
 
-				<div class="archive-item">
-					<a href="HTML/lista.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Lista</h3>
-					</a>
+				<div class="proximo" id="proximoHtml">
+					<span>></span>
 				</div>
-
-				<div class="archive-item">
-					<a href="HTML/link.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Link</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="HTML/form.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Formulário</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="HTML/image.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Imagem</h3>
-					</a>
-				</div>
-				
-			</article>
-
-			<!--Inicio do CSS-->
-
-			<div class="archive-title css" id="css">
-				<h2>CSS</h2>
 			</div>
-			<article class="archive-area css-area" id="css-area">
+
+
+			<!--Inicio CSS-->
+			<div class="titulo-card css">
+				<span>Css</span>
+			</div>
+			<div class="slider">
+				<div class="anterior" id="anteriorCss">
+					<span><</span>
+				</div>
+
+				<!--Carroussel 1-->
+				<div class="card-area" id="areaCss1">
+
+					<div class="card">
+						<a href="CSS/anatomia.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Anatomia</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/origem.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Origem</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/classeTag.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Classe Tag</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/seletor.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Seletor</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/esp1.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Especificidade</h3>
+						</a>
+					</div>	
+
+				</div>
+
+				<!--Carroussel 2-->
+				<div class="card-area desaparecer" id="areaCss2">
+
+					<div class="card">
+						<a href="CSS/esp2.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Especifi... 2</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/heranca.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Herança</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/boxmodel.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Box Model</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/margincollapse.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Collapse</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/display.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Display</h3>
+						</a>
+					</div>	
+
+				</div>
+
+				<!--Carroussel 3-->
+				<div class="card-area desaparecer" id="areaCss3">
+
+					<div class="card">
+						<a href="CSS/alturaLargura.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Dimensões</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/boxSizing.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Box Sizing</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/overflow.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Overflow</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/float.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Float</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/cores.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Cores</h3>
+						</a>
+					</div>	
+
+				</div>
+
+				<!--Carroussel 4-->
+				<div class="card-area desaparecer" id="areaCss4">
+
+					<div class="card">
+						<a href="CSS/unidades.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Unidades</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/unidades2.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Unidades 2</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/textos.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Textos</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/position.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Position</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/mediaquery.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Media Query</h3>
+						</a>
+					</div>	
+
+				</div>
+
+				<!--Carroussel 5-->
+				<div class="card-area desaparecer" id="areaCss5">
+
+					<div class="card">
+						<a href="CSS/flexBox1.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Flex Box</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/flexBox2.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Flex Box 2</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/flexBox3.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Flex Box 3</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/grid1.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Grid</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/grid2.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Grid 2</h3>
+						</a>
+					</div>	
+
+				</div>
+
+				<!--Carroussel 6-->
+				<div class="card-area desaparecer" id="areaCss6">
+
+					<div class="card">
+						<a href="CSS/grid3.html" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Grid 3</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/CARD/" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Card</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="CSS/MENU-FLEX/" target="_blank">
+							<div class="card-img css-card"></div>
+							<h3 class="archive-item-title">Menu</h3>
+						</a>
+					</div>
+
+				</div>
+
+				<div class="proximo" id="proximoCss">
+					<span>></span>
+				</div>
+
+			</div>
+
+			<!--Inicio JS-->
+			<div class="titulo-card js">
+				<span>Javascript</span>
+			</div>
+			<div class="slider">
+				<div class="anterior" id="anteriorJs">
+					<span><</span>
+				</div>
+
+				<!--Carroussel 1-->
+				<div class="card-area" id="areaJs1">
+
+					<div class="card">
+						<a href="JS/ATRIBUTO1" target="_blank">
+							<div class="card-img js-card"></div>
+							<h3 class="archive-item-title">Atributo</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="JS/ATRIBUTO2" target="_blank">
+							<div class="card-img js-card"></div>
+							<h3 class="archive-item-title">Atributo 2</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="JS/ELEMENTO1" target="_blank">
+							<div class="card-img js-card"></div>
+							<h3 class="archive-item-title">Elemento</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="JS/ELEMENTO2" target="_blank">
+							<div class="card-img js-card"></div>
+							<h3 class="archive-item-title">Elemento 2</h3>
+						</a>
+					</div>
+					<div class="card">
+						<a href="JS/ELEMENTO3" target="_blank">
+							<div class="card-img js-card"></div>
+							<h3 class="archive-item-title">Elemento 3</h3>
+						</a>
+					</div>	
+
+				</div>
+
+				<!--Carroussel 2-->
+				<div class="card-area desaparecer" id="areaJs2">
+
+					<div class="card">
+						<a href="JS/ELEMENTO4" target="_blank">
+							<div class="card-img js-card"></div>
+							<h3 class="archive-item-title">Elemento 4</h3>
+						</a>
+					</div>
+
+				</div>
+
+				<div class="proximo" id="proximoJs">
+					<span>></span>
+				</div>
+
+			</div>
 				
-				<div class="archive-item">
-					<a href="CSS/anatomia.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Anatomia</h3>
-					</a>
-				</div>
 
-				<div class="archive-item">
-					<a href="CSS/origem.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Origem</h3>
-					</a>
-				</div>
-				
-				<div class="archive-item">
-					<a href="CSS/classeTag.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Classe Tag</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/seletor.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Seletor</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/esp1.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Especifidade #1</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/esp2.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Especifidade #2</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/heranca.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Herança</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/boxmodel.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Box Model</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/margincollapse.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Margin Collapse</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/display.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Display</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/alturaLargura.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Altura e Largura</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/boxSizing.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Box Sizing</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/overflow.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Overflow</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/float.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Float</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/cores.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Cores</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/unidades.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Unidades #1</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/unidades2.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Unidades #2</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/textos.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Textos</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/position.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Position</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/mediaquery.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Media Query</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/flexBox1.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Flex Box #1</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/flexBox2.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Flex Box #2</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/flexBox3.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Flex Box #3</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/grid1.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Grid #1</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/grid2.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Grid #2</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/grid3.html" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Grid #3</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/CARD/" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Exemplo Card</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="CSS/MENU-FLEX/" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Exemplo Menu</h3>
-					</a>
-				</div>
-
-			</article>
+		</section>
 
 			<!--Inicio do JavaScript-->
 
-			<div class="archive-title js" id="js">
+			<!--<div class="archive-title js" id="js">
 				<h2>JavaScript</h2>
 			</div>
 			<article class="archive-area js-area" id="js-area">				
-
-				<div class="archive-item">
-					<a href="JS/ATRIBUTO1" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Atributo #1</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="JS/ATRIBUTO2" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Atributo #2</h3>
-					</a>
-				</div>
-				
-				<div class="archive-item">
-					<a href="JS/ELEMENTO1" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Elemento #1</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="JS/ELEMENTO2" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Elemento #2</h3>
-					</a>
-				</div>
-
-				<div class="archive-item">
-					<a href="JS/ELEMENTO3" target="_blank">
-					<div>
-						<img src="IMG/logo-white.png" />
-					</div>
-					<h3 class="archive-item-title">Elemento #3</h3>
-					</a>
-				</div>
 
 				<div class="archive-item">
 					<a href="JS/ELEMENTO4" target="_blank">
@@ -511,7 +495,5 @@
 		</footer>
 
 	</main>
-
-	<script type="text/javascript" src="JS/script.js"></script>
 </body>
 </html>

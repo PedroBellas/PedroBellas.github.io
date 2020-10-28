@@ -79,16 +79,16 @@ header > div{
 
 .logo h1{
 	font-size: 2.25em;
-	/*font-size: 2.5vw;*/
 	
 	font-weight: bold;
 	color: #fff;
 
-	transition: 0.75s;
+	transition: 0.5s;
 }
 
 .logo h1:hover{
 	font-size: 2.3em;
+	letter-spacing: 2px;
 }
 
 .logo span{
@@ -165,7 +165,7 @@ header > div{
 	left: 15%;
 
 	/*Definindo tempo de animação*/
-	transition: 1.25s ease;
+	transition: 1s ease;
 
 }
 
@@ -185,7 +185,7 @@ header > div{
 	left: 15%;
 
 	/*Definindo tempo de animação*/
-	transition: 1.75s ease;
+	transition: 1s ease;
 }
 
 .active-btn {
@@ -365,7 +365,7 @@ Area de conteudo
 */
 
 .content-area{
-	padding: 5% 0;
+	padding: 2.5% 0;
 	width: 100%;
 
 	
@@ -374,12 +374,6 @@ Area de conteudo
 
 	opacity: 0;
 	transition: 2s linear;
-}
-
-.slow-show{
-
-	opacity: 1;
-
 }
 
 .change-order{
@@ -400,15 +394,23 @@ Area de conteudo - Figura
 	justify-content: center;
 }
 
+.fig-area a{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .fig-area img{
 	width: 50%;
 	padding: 2%;
-	transition: 2s ease;
+	transition: 1s ease;
+	cursor: pointer;
 }
 
 .fig-area img:hover{
-	width: 52%;
-	padding: 0;
+	width: 50.5%;
+	
 }
 
 /*
@@ -447,10 +449,12 @@ Area de conteudo - Texto
 
 .text-area p a{
 	color: #05FF1E;
+	transition: 0.5s ease;
 }
 
 .text-area p a:hover{
-	font-size: 1.05em;
+	letter-spacing: 0.5px;
+	text-shadow: 0 0 15px #05FF1E;
 }
 
 
@@ -554,107 +558,153 @@ Area de arquivos
 */
 
 .study-area{
-	width: 100%;
-	padding: 0 5%;
-
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	width: 98%;
+	margin: 2.5% 1%;
+	display: static;
 }
 
-.archive-title{
+.titulo-card{
 	width: 100%;
-	font-size: 1.5em;
-	color: #05FF1E;
-	margin-top: 2.5%;
-	padding: 0.5% 5%;
-
-	cursor: pointer;
-	border-bottom: 3px solid #05FF1E;
-
-	transition: 2s ease;
+	padding: 0 0 0.5% 5%;
+	font-size: 2.25em;
+	font-weight: bold;
 }
 
-.archive-title:hover{
-	font-size: 1.6em;
-	letter-spacing: 10px;
+.html{
+	border-bottom: 4px solid #F5700A;
+	color: #F5700A;
 }
 
-.archive-area{
-	width: 100%;
-	height: 0;
+.css{
+	border-bottom: 4px solid #0080FF;
+	color: #0080FF;	
+}
 
+.js{
+	border-bottom: 4px solid #fffb00;
+	color: #fffb00;		
+}
+
+/*
+===========================
+Carrossel
+===========================
+*/
+
+.slider{
+	width: 100%;
+	padding: 2.5% 1%;
 	overflow: hidden;
-
-	/*padding: 2.5% 5%;*/
 
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
-	justify-content: space-around;
-	flex-wrap: wrap;
-
-	border-left: 3px solid #05FF1E;
-	border-right: 3px solid #05FF1E;
-	border-bottom: 3px solid #05FF1E;
-
-	transition: 2s ease;
-
+	align-items: center;
+	justify-content: flex-start;
 }
 
-.drop-down-area{
-	height: auto;	
-	padding: 2.5% 5%;
+.card-area{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
 }
 
-.archive-item{
-	width: 200px;
-	margin: 1% 2.5%;
-	background-color: #2a2a2a;
+.card{
+	width: 15%;
+	background-color: #1c1c1c;
+	margin: 0 2.5%;
+	border-radius: 5%;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: column;
+}
 
-	box-shadow: 1px 1px 1px 1px #2f2f2f;
+.card:hover{
+	text-shadow: 0px 0px 10px #fff;
+	box-shadow: 1px 1px 1px 1px #555;
+}
 
-	border-radius: 10px;
+.card:hover .card-img{
+	background-image: url("../IMG/logo-white.png");
+	background-size: cover;
+	background-position: center;
+}
 
-	cursor: pointer;
-
+.card a{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-
-	overflow: hidden;
+	justify-content: flex-start;
 }
 
-.archive-item a{
-	color: #05FF1E;
-	transition: 1s ease;
-}
-
-.archive-item div{
+.card-img{
 	width: 80%;
-	margin: 5% 10%;
+	height: 130px;
+	margin: 10% 10%;
+	background-size: cover;
+	background-position: center;
+
+	transition: 0.5s	 ease;
+	opacity: 1.0;
 }
 
-.archive-item div img{
+/*Area de logo personalizado*/
+
+.html-card{
+	background-image: url("../IMG/logo-html.png");
+}
+
+.css-card{
+	background-image: url("../IMG/logo-css.png");
+}
+
+.js-card{
+	background-image: url("../IMG/logo-js.png");
+}
+
+.card-img img{
 	width: 100%;
 }
 
-.archive-item-title{
-	width: 100%;
+.card a h3{
+	width: 90%;
+	margin: 0 5% 10% 5%;
 	color: #05FF1E;
-	font-size: 1.35em;
 	font-weight: normal;
-	padding: 4% 2.5%;
 	text-align: center;
+	font-size: 24px;
 }
 
-.archive-item a:hover{
-	margin: 2.5%;
-	text-decoration: underline;
-	font-size: 1.05em;
+.card:hover a h3{
+	color: #fff;
+}
+
+.anterior, .proximo{
+	width: 5%;
+	font-size: 5vw;
+	display: flex;
+	color: #05FF1E;
+	cursor: pointer;
+	transition: 0.5s ease;
+	font-weight: bold;
+}
+
+.anterior{
+	justify-content: flex-start;
+}
+
+.anterior:hover{
+	color: #fff;
+}
+
+.proximo{
+	justify-content: flex-end;
+}
+
+.proximo:hover{
+	color: #fff;	
 }
 
 /*
@@ -680,41 +730,15 @@ Metodos Gerais
 	opacity: 1;
 }
 
+.desaparecer{
+	opacity: 0;
+	display: none;
+}
+
 .show-area{
 	display: flex;
 }
 
-/*Metodos totais*/
-
-.html{
-	color: orange;
-	border-bottom: 3px solid orange;
-}
-.html-area{
-	border-left: 3px solid orange;
-	border-right: 3px solid orange;
-	border-bottom: 3px solid orange;	
-}
-
-.css{
-	color: lightblue;
-	border-bottom: 3px solid lightblue;	
-}
-.css-area{
-	border-left: 3px solid lightblue;
-	border-right: 3px solid lightblue;
-	border-bottom: 3px solid lightblue;	
-}
-
-.js{
-	color: yellow;
-	border-bottom: 3px solid yellow;
-}
-.js-area{
-	border-left: 3px solid yellow;
-	border-right: 3px solid yellow;
-	border-bottom: 3px solid yellow;	
-}
 
 
 /*
@@ -741,7 +765,7 @@ Celulares
 		align-items: center;
 		justify-content: flex-start;
 
-		transition: 1.5s;
+		transition: 1s;
 	}
 
 	.active-menu{
@@ -796,15 +820,12 @@ Celulares
 		margin: 2.5% 0;
 	}
 
-	/*Area dos termos de uso completa*/
+	/*Area de cards desktop*/
 
-	.terms-text-area{
-		left: 10%;
-		width: 80%;
-	}
-
-	.archive-item{
-		margin: 5% 0;
+	.study-area{
+		width: 98%;
+		margin: 2.5% 1%;
+		display: none;
 	}
 
 	/*Rodape*/
