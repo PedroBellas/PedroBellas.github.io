@@ -675,6 +675,7 @@ Carrossel
 	font-weight: normal;
 	text-align: center;
 	font-size: 24px;
+	overflow: hidden;
 }
 
 .card:hover a h3{
@@ -740,6 +741,55 @@ Metodos Gerais
 }
 
 
+
+/*
+===========================
+Netbooks
+===========================
+*/
+
+@media (max-width: 1024px){
+
+	.card{
+		width: 19%;
+		margin: 0 0.5%;
+	}
+
+	.card-img{
+		width: 90%;
+		height: 130px;
+		margin: 10% 5%;
+	}
+
+	.card a h3{
+
+		font-size: 20px;
+
+	}
+
+}
+
+/*
+===========================
+Tablets
+===========================
+*/
+
+@media (max-width: 900px){
+
+	.card-img{
+		width: 95%;
+		height: 110px;
+		margin: 5% 2.5%;
+	}
+
+	.card a h3{
+
+		font-size: 18px;
+
+	}
+
+}
 
 /*
 ===========================
@@ -823,9 +873,47 @@ Celulares
 	/*Area de cards desktop*/
 
 	.study-area{
-		width: 98%;
-		margin: 2.5% 1%;
+		width: 95%;
+		margin: 2.5% 2.5%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.slider{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.card-area{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.card{
+		width: 70%;
+		background-color: #1c1c1c;
+		margin: 5% 15%;
+	}
+
+	.anterior, .proximo{
 		display: none;
+	}
+
+	.card-img{
+		width: 90%;
+		height: 100px;
+		margin: 5% 2.5%;
+	}
+
+	.desaparecer{
+		opacity: 1;
+		display: flex;
 	}
 
 	/*Rodape*/
